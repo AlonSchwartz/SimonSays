@@ -1,0 +1,105 @@
+.buttons_grid {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    row-gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.gameContainer {
+    position: absolute;
+    left: 45%;
+    text-align: center;
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-content: space-between;
+    align-items: center;
+}
+
+th {
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.gameButton {
+    height: 80px;
+    width: 80px;
+    border: 3px solid black;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.red {
+    border: 3px solid red;
+}
+
+.red:active,
+.red.active {
+    background-color: red;
+}
+
+.blue {
+    border: 3px solid blue;
+}
+
+.blue:active,
+.blue.active {
+    background-color: blue;
+}
+
+.yellow {
+    border: 3px solid yellow;
+}
+
+.yellow:active,
+.yellow.active {
+    background-color: yellow;
+}
+
+.green {
+    border: 3px solid green;
+}
+
+.green:active,
+.green.active {
+    background-color: green;
+}
+
+.purple {
+    border: 3px solid purple;
+}
+
+.purple:active,
+.purple.active {
+    background-color: purple;
+}
+
+.greenyellow {
+    border: 3px solid greenyellow;
+}
+
+.greenyellow:active,
+.greenyellow.active {
+    background-color: greenyellow;
+}
+
+td {
+    width: 40px;
+}
+
+.playBtn {
+    background-color: #4CAF50;
+    border: 1px green;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.playBtn:hover {
+    background-color: #3e8e41;
+}

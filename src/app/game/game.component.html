@@ -1,0 +1,14 @@
+<sidebar [leaderboard]="leaderboard" [gameStarted]="gameStarted"></sidebar>
+
+<div class="gameContainer">
+    <h1> Simon Says </h1>
+    <h3> Level {{level}} </h3>
+    <div class="buttons_grid">
+        <div *ngFor="let button of gameButtons; let i = index" [class]="'gameButton '+button.color"
+            [ngClass]="button.isOn? 'active' : '' " (click)="buttonClick(i)">
+        </div>
+    </div>
+    <br>
+    <button class="playBtn" (click)="start()" *ngIf="!gameStarted"> PLAY </button>
+
+</div>

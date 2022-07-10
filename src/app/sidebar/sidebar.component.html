@@ -1,0 +1,13 @@
+<div class="sidebar">
+    <span class="leaderboard"> LEADERBOARD</span>
+
+    <ol>
+        <li *ngFor="let player of leaderboard"><span> {{player.name}}</span>,
+            Level {{player.highscore}}</li>
+    </ol>
+
+    <button class="return" (click)="goToHomepage()" [disabled]="gameStarted"> RETURN </button>
+</div>
+
+
+<router-outlet skipLocationChange></router-outlet>

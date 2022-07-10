@@ -1,0 +1,12 @@
+<div class="container">
+    <h1>Welcome to Simon Says!</h1>
+    <br>
+    <span> Please enter your name: </span>
+    <br>
+    <input maxlength="8" size="10" [(ngModel)]=playerName>
+    <br>
+    <button (click)="submit()" [disabled]="playerName == '' ? true : false "> Submit </button>
+
+</div>
+
+<router-outlet skipLocationChange></router-outlet>
